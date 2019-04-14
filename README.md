@@ -27,5 +27,5 @@ Gerar relatório de entradas e saídas até o momento;
 Gerar novo cadastro de administrador;
 Mudar senha de administrador;
 
-
+  
 
