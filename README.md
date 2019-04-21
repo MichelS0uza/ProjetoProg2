@@ -1,4 +1,4 @@
-Sistema de controle de acesso
+﻿	Sistema de controle de acesso
 
 Grupo 14 : Michel de Souza
         David 
@@ -26,6 +26,4 @@ Gerar nova chave de acesso ao usuário;
 Gerar relatório de entradas e saídas até o momento;
 Gerar novo cadastro de administrador;
 Mudar senha de administrador;
-
   
-

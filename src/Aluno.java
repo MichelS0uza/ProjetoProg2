@@ -1,24 +1,19 @@
-
 public class Aluno extends Visitante {
 	
 	private String turno;
 	private String Curso;
-	
+	private String matricula;
 
-	public Aluno(String n, String tel, String rg, double ca, String t, String c) {
+	public Aluno() {
+		// TODO Stub de construtor gerado automaticamente
+	}
+	public Aluno(String n, String tel, String rg, double ca, String t, String c, String mat) {
 		super(n, tel, rg, ca);
-		setTurno(t);
-		setCurso(c);
+		this.setTurno(t);
+		this.setCurso(c);
+		this.setMatricula(mat);
 		
 	}
-	
-	public void info() {
-		
-		getCurso();
-		getTurno();
-		
-	}
-	
 	public String getTurno() {
 		return turno;
 	}
@@ -30,6 +25,12 @@ public class Aluno extends Visitante {
 	}
 	public void setCurso(String curso) {
 		Curso = curso;
+	}
+	public String getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
 	} 
 
 }

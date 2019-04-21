@@ -8,7 +8,7 @@ public class Funcionario extends Visitante{
 		
 	}
 	
-	
+	//Método temporário para visualizar os dados
 	
 	public String getDepartamento() {
 		return departamento;
