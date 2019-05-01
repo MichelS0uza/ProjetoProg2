@@ -1,4 +1,4 @@
-public class Aluno extends Visitante {
+public class Aluno extends Pessoa{
 	
 	private String turno;
 	private String Curso;
@@ -7,7 +7,7 @@ public class Aluno extends Visitante {
 	public Aluno() {
 		// TODO Stub de construtor gerado automaticamente
 	}
-	public Aluno(String n, String tel, String rg, double ca, String t, String c, String mat) {
+	public Aluno(String n, String tel, String rg, int ca, String t, String c, String mat) {
 		super(n, tel, rg, ca);
 		this.setTurno(t);
 		this.setCurso(c);

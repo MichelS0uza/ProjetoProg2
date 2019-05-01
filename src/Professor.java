@@ -1,10 +1,14 @@
 
-public class Professor extends Visitante{
+public class Professor extends Pessoa{
 
 	private String matricula;
 	private String departamento;
 	
-	public Professor(String n, String tel, String rg, double ca, String mat, String dpt) {
+	public Professor() {
+		
+	}
+	
+	public Professor(String n, String tel, String rg, int ca, String mat, String dpt) {
 		super(n, tel, rg, ca);
 		
 		this.setNome(n);

@@ -1,15 +1,23 @@
 
-public class Administrador extends Visitante {
+public class Administrador extends Pessoa{
 
 	private String login;
 	private String senha;
+	private Aluno al;
+	private Professor pr;
+	private Funcionario func;
+	private Visitante vi;
+	private Administrador admin;
 
-	public Administrador(String n, String tel, String rg, double ca, String lg, String s) {
+	public Administrador() {
+
+	}
+
+	public Administrador(String n, String tel, String rg, int ca, String lg, String s) {
 		super(n, tel, rg, ca);
 		this.setLogin(lg);
 		this.setSenha(s);
 	}
-
 	// Insere o usuário de acordo com o número do seu id:
 	// Visitante id = 00
 	// Aluno id = 01
@@ -17,11 +25,31 @@ public class Administrador extends Visitante {
 	// Funcionário id = 03
 	// Adm id = 04
 
-	public Aluno novoUsuario() {
-		Aluno al = new Aluno();		
-		return al;
+	public Aluno novoAluno() {
+
+		return this.al = new Aluno();
 	}
-	
+
+	public Professor novoProfessor() {
+
+		return this.pr = new Professor();
+	}
+
+	public Funcionario novoFuncionario() {
+
+		return this.func = new Funcionario();
+	}
+
+	public Visitante novoVisitante() {
+
+		return this.vi = new Visitante();
+	}
+
+	public Administrador novoAdm() {
+		
+		return this.admin = new Administrador();
+	}
+
 	public void removerUsuario() {
 		// TODO Stub de método gerado automaticamente
 

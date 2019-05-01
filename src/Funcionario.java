@@ -1,8 +1,12 @@
 
-public class Funcionario extends Visitante{
+public class Funcionario extends Pessoa{
 	private String departamento;
 
-	public Funcionario(String n, String tel, String rg, double ca, String dpt) {
+	public Funcionario() {
+		
+	}
+	
+	public Funcionario(String n, String tel, String rg, int ca, String dpt) {
 		super(n, tel, rg, ca);
 		setDepartamento(dpt);
 		
